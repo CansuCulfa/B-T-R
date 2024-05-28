@@ -306,11 +306,11 @@ namespace CARS.User
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
             // reset
-            ddlCountry.ClearSelection();
-            CheckBoxList2.ClearSelection();
-            RadioButtonList2.SelectedValue = "0";
-            RBSelectedColorChange();
-            showCarList();
+            //ddlCountry.ClearSelection();
+            //CheckBoxList2.ClearSelection();
+            //RadioButtonList2.SelectedValue = "0";
+            //RBSelectedColorChange();
+            //showCarList();
         }
 
         void RBSelectedColorChange()
