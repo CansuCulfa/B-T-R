@@ -26,6 +26,15 @@ namespace CARS.Admin
             {
                 ShowUsers();
             }
+
+            //if (Session["ShopAdmin"] == null)
+            //{
+            //    Response.Redirect("../User/Login.aspx");
+            //}
+            //if (!IsPostBack)
+            //{
+            //    ShowUsers();
+            //}
         }
         private void ShowUsers()
         {

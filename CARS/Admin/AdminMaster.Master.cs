@@ -19,5 +19,7 @@ namespace CARS.Admin
             Session.Abandon();
             Response.Redirect("../User/Login.aspx");
         }
+
+      
     }
 }

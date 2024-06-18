@@ -36,6 +36,7 @@
                                         <asp:DropDownList ID="ddlLoginType" runat="server" CssClass="form-control w-100">
                                               <asp:ListItem Value="0">Select Login Type</asp:ListItem>
                                             <asp:ListItem>Admin</asp:ListItem>
+                                               <asp:ListItem>ShopAdmin</asp:ListItem>
                                               <asp:ListItem>User</asp:ListItem>
                                         </asp:DropDownList>
                                          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="UserType is required"

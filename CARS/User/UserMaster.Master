@@ -25,6 +25,26 @@
             <link rel="stylesheet" href="../assets/css/slick.css">
             <link rel="stylesheet" href="../assets/css/nice-select.css">
             <link rel="stylesheet" href="../assets/css/style.css">
+
+
+      <script>
+        // Adres Barda tıkladığımız kısmı renklendirir.
+        $(function () {
+            // Adres Bardaki tüm urlleri alır
+            var url = window.location.href;
+            // her a etiketini geçer
+            $("#navbarSupportedContent a").each(function () {
+                // adres bardaki ile aynı olup olmadığını kontrol eder
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active");
+                }
+            });
+        });
+
+    </script> 
+
+   
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -64,9 +84,9 @@
                                             <li><a href="CarListing.aspx">Find a Car </a></li>
                                              <li><a href="BlogPage.aspx">Blog</a></li>
                                             <li><a href="About.aspx">About Us</a></li>
-                                            <li><a href="#">Page</a>
+                                            <li><a href="Product.aspx">Shop</a>
                                                 <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="Cart.aspx">My Cart</a></li>
                                                     <li><a href="single-blog.html">Blog Details</a></li>
                                                     <li><a href="elements.html">Elements</a></li>
                                                     <li><a href="CarDetails.aspx">Car Details</a></li>

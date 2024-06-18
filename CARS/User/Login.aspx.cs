@@ -39,6 +39,23 @@ namespace CARS.User
                         showErrorMsg("Admin");
                     }
                 }
+
+                else if(ddlLoginType.SelectedValue == "ShopAdmin")
+                {
+                    username = ConfigurationManager.AppSettings["ShopAdminusername"];
+                    password = ConfigurationManager.AppSettings["ShopAdminpassword"];
+                    if (username == txtUserName.Text.Trim() && password == txtPassword.Text.Trim())
+                    {
+                        Session["ShopAdmin"] = username;
+                        Response.Redirect("../ShopAdmin/ShopDashboard.aspx", false);
+                    }
+                    else
+                    {
+                        showErrorMsg("ShopAdmin");
+                    }
+                }
+
+
                 else
                 {
                     con = new SqlConnection(str);
